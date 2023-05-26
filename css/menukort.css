@@ -1,0 +1,915 @@
+/* mobil container styling */
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  color: black;
+  border-radius: 10px;
+}
+
+/* styling af alt indhold */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'big-caslon-fb', serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+}
+
+
+a {
+color: #0018b1;
+cursor: pointer;
+text-decoration: none;
+}
+
+a:hover {
+opacity: 0.8;
+}
+
+/* nav toggle */
+.nav-toggle {
+cursor: pointer;
+right: 20px;
+position: absolute;
+top: 25px;
+width: 30px;
+z-index: 4;
+}
+.nav-toggle:hover {
+opacity: 0.8;
+}
+
+.nav-toggle .nav-toggle-bar,
+.nav-toggle .nav-toggle-bar::after,
+.nav-toggle .nav-toggle-bar::before {
+position: absolute;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background: #ffffff;
+content: "";
+height: 0.18rem;
+transition: all 0.5s;
+width: 100%;
+}
+.nav-toggle .nav-toggle-bar {
+margin-top: 0;
+}
+.nav-toggle .nav-toggle-bar::after {
+margin-top: 8px;
+}
+.nav-toggle .nav-toggle-bar::before {
+margin-top: -8px;
+}
+.nav-toggle.expanded .nav-toggle-bar {
+background: transparent;
+}
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+background: #0018b1;
+margin-top: 0;
+}
+.nav-toggle.expanded .nav-toggle-bar::after {
+-ms-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.nav-toggle.expanded .nav-toggle-bar::before {
+-ms-transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+/* nav */
+.nav {
+background: #ffffff;
+cursor: pointer;
+display: flex;
+font-size: 3vw;
+height: 100vh;
+left: 100%;
+padding: 6rem 2rem 2rem 2rem;
+position: fixed;
+top: 0;
+transition: left 0.5s;
+width: 100%;
+z-index: 3;
+}
+
+.nav.expanded {
+left: 0%;
+}
+
+.nav ul {
+list-style: none;
+margin: 5%;
+}
+
+.nav ul li{
+  margin-bottom: 15%;
+  font-size: 6vw;
+  width: 100%;
+  margin-left: 14vw;
+  text-align: center;
+}
+
+/* logo styling */
+.logo {
+  width: 90px;
+    margin-top: 1.2%;
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+  
+/* billede styling */
+      .img-header{
+          width: 100%;
+          margin-top: 0;
+          display: flex;
+      }
+  
+  /* bølge styling */
+      .backround-image {
+          width: 100%;
+          margin-top: -89%;
+      }
+  
+      /* icon styling */
+      .icon-coffee {
+          display: flex;
+          margin-left: auto;
+          margin-right: auto;
+          width: 7%;
+          margin-top: -79%;
+      }
+
+      /* h1 styling */
+      .intro-section h1 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20%;
+        color: #0018b1;
+        font-size: 6vw;
+      }
+
+      
+
+      /* start menu med varme drikkevarer */
+
+      /* border styling */
+      .menu-border {
+        position: relative;
+        background-color: #ffffff;
+        border: solid #0018b1;
+        width: 90%;
+        margin-top: -10%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        z-index: 2;
+      }
+
+      /* h1 styling */
+      .menu-1 h1 {
+        margin: 10%;
+        text-align: center;
+        color: #0018b1;
+        font-size: 5vw;
+      }
+
+      /* wrapper styling */
+      .wrapper-menu {
+        display: grid;
+        grid-template: 100%;
+      }
+
+      /* section styling */
+      .hot-drinks {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        
+      }
+
+      /* billede styling */
+      .hot-drinks img {
+        width: 60%;
+        margin-left: -10%;
+        margin-bottom: -10%;
+        
+      }
+
+      /* h2 styling */
+      .hot-drinks h2 {
+        color: #0018b1;
+        font-size: 5vw;
+        margin-top: 5%;
+        margin-bottom: 2%;
+      }
+
+      /* linje styling */
+      .horisontal-line {
+        border-top: solid 1px #0018b1;
+        margin-bottom: 2%;
+        width: 90%;
+      }
+
+      /* tekst styling */
+      .hot-drinks p {
+        width: 90%;
+        color: #0018b1;
+        font-size: 3vw;
+        margin-bottom: 10%;
+      }
+
+      /* kort linje styling */
+      .short-horisontal-line {
+        border-top: solid 1px #0018b1;
+        margin-bottom: 2%;
+        margin-left: 3%;
+        width: 40%;
+      }
+
+      /* h3 styling */
+      .hot-drinks h3 {
+        margin-left: 10%;
+        color: #0018b1;
+      }
+
+      /* h4 styling */
+      .hot-drinks h4 {
+        margin-left: 10%;
+        color: #0018b1;
+        margin-top: 4%;
+        margin-bottom: 1%;
+      }
+
+      /* start menu med kolde drikkevarer */
+
+      /* border styling */
+      .menu-border-2 {
+        position: relative;
+        background-color: #ffffff;
+        border: solid #0018b1;
+        width: 90%;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+      }
+
+      /* h1 styling */
+      .menu-2 h1 {
+        margin: 10%;
+        text-align: center;
+        color: #0018b1;
+        font-size: 5vw;
+      }
+
+      /* wrapper styling */
+      .wrapper-menu-2 {
+        display: grid;
+        grid-template: 100%;
+      }
+
+      /* section styling */
+      .cold-drinks {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        
+      }
+
+      /* billede styling */
+      .cold-drinks img {
+        width: 60%;
+        margin-left: -10%;
+        margin-bottom: -10%;
+        
+      }
+
+      /* h2 styling */
+      .cold-drinks h2 {
+        color: #0018b1;
+        font-size: 5vw;
+        margin-top: 5%;
+        margin-bottom: 2%;
+      }
+
+      /* tekst styling */
+      .cold-drinks p {
+        width: 90%;
+        color: #0018b1;
+        font-size: 3vw;
+        margin-bottom: 10%;
+      }
+
+      /* h3 styling */
+      .cold-drinks h3 {
+        margin-left: 10%;
+        color: #0018b1;
+      }
+
+      /* h4 styling */
+      .cold-drinks h4 {
+        margin-left: 10%;
+        color: #0018b1;
+        margin-top: 4%;
+        margin-bottom: 1%;
+      }
+
+      /* start menu med madvarer */
+
+      /* border styling */
+      .menu-border-3 {
+        position: relative;
+        background-color: #ffffff;
+        border: solid #0018b1;
+        width: 90%;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+      }
+
+      /* h1 styling */
+      .menu-3 h1 {
+        margin: 10%;
+        text-align: center;
+        color: #0018b1;
+        font-size: 5vw;
+      }
+
+      /* wrapper styling */
+      .wrapper-menu-3 {
+        display: grid;
+        grid-template: 100%;
+      }
+
+      /* display styling */
+      .food-text {
+        display: grid;
+        grid-template-columns: 80% 10%;
+        margin-left: 5%;
+        margin-bottom: 10%;
+      }
+
+      /* h2 styling */
+      .food-text h2 {
+        color: #0018b1;
+        font-size: 5vw;
+      }
+
+      /* tekst styling */
+      .food-text p {
+        width: 70%;
+        color: #0018b1;
+        font-size: 3vw;
+      }
+
+      .food-text span {
+        color: #0018b1;
+        font-size: 3.5vw;
+      }
+
+      /* h3 styling */
+      .food-text h3 {
+        color: #0018b1;
+        font-size: 5vw;
+      }
+
+      /* billeder styling */
+      #icon-croissant {
+        margin-left: 20%;
+        width: 25%;
+        margin-bottom: 5%;
+      }
+
+      #icon-sandwich {
+        margin-left: 5%;
+        width: 30%;
+        margin-bottom: 5%;
+      }
+
+
+
+      /* start footer */
+
+      #line {
+		    width: 100%;
+	    } 
+
+      .logo-footer {
+        width: 30%;
+        margin-left: 35%;
+      }
+
+      footer p {
+        font-size: 3vw;
+        text-align: center;
+        color: #0018b1;
+      }
+
+      .footer-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #0018b1;
+        margin-top: 5%;
+        padding-bottom: 5%;
+      }
+
+      .footer-text h2 {
+        font-size: 6vw;
+        margin-top: 20px;
+      }
+
+      
+      .socials a{
+        display: inline-block;
+        font-size: 25px;
+        height: 40px;
+        width: 40px;
+        background: #0018b1;
+        text-align: center;
+        line-height: 42px;
+        border-radius: 25%;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        }
+        
+        .socials a:hover{
+        background: #0018b173;
+        color: #ffffffc6;;
+        } 
+
+        .city-img {
+          width: 100%;
+          margin-top: 10%;
+          }
+
+
+/* 
+    Kilde benyttet til responsive webdesign
+    
+    Chris, K. (2021) Responsive Web Design – Modern Website Code for Beginners, freeCodeCamp.org. 
+    Available at: https://www.freecodecamp.org/news/responsive-web- design-modern-website-code-for-beginners (Accessed: 16 maj 2023).
+*/
+
+/* første breakpoint */
+	@media screen and (min-width: 480px) {
+
+
+		.mobile-container {
+		  max-width: 768px;
+		  margin: 0;
+		  border-radius: 10px;
+		}
+
+		.nav-toggle {
+			right: 30px;
+			top: 30px;
+			width: 35px;
+			}
+
+			.nav ul li{
+				font-size: 5vw;
+				margin-left: 18vw;
+			}	
+
+		.nav-toggle .nav-toggle-bar::after {
+				margin-top: 25%;
+			}
+		.nav-toggle .nav-toggle-bar::before {
+				margin-top: -25%;
+			}
+
+
+			.logo {
+				width: 100px;
+				left: 50%;
+				margin-left: -50px;
+	
+			}	
+
+      .icon-coffee {
+        width: 6%;
+    }
+
+      .intro-section h1 {
+        font-size: 5vw;
+      }
+
+      .hot-drinks img {
+        width: 190%;
+        margin: 0;
+        margin-left: -35%;
+        margin-top: 25%;
+      }
+
+      .wrapper-menu {
+        margin: 5%;
+      }
+
+      .hot-drinks {
+        display: grid;
+        grid-template-columns: 20% 80%;
+      }
+
+      .hot-drinks-text {
+        margin-left: 25%;
+
+      }
+
+      .hot-drinks-price {
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+
+      .hot-drinks-price .short-horisontal-line {
+        width: 60%;
+      }
+
+      
+
+      .cold-drinks img {
+        width: 190%;
+        margin: 0;
+        margin-left: -35%;
+        margin-top: 25%;
+      }
+
+      .wrapper-menu-2 {
+        margin: 5%;
+      }
+
+      .cold-drinks {
+        display: grid;
+        grid-template-columns: 20% 80%;
+      }
+
+      .cold-drinks-text {
+        margin-left: 25%;
+
+      }
+
+      .cold-drinks-price {
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+
+      .food-text {
+        margin-bottom: 6%;
+      }
+
+      .food-text h2 {
+        font-size: 4vw;
+      }
+
+      .food-text p {
+        color: #0018b1;
+        font-size: 2vw;
+      }
+
+      .food-text span {
+        font-size: 2.5vw;
+      }
+
+      .food-text h3 {
+        font-size: 4vw;
+      }
+  
+      #icon-croissant {
+        margin-left: 30%;
+        width: 15%;
+        margin-bottom: 5%;
+      }
+
+      #icon-sandwich {
+        margin-left: 5%;
+        width: 20%;
+        margin-bottom: 5%;
+      }
+
+	  }
+	
+	
+    /* andet breakpoint */
+	  @media screen and (min-width: 768px) {
+	
+      .mobile-container {
+        max-width: 1024px;
+        margin: auto;
+        border-radius: 10px;
+    
+      }
+  
+      .logo {
+        width: 120px;
+        top: 0px;
+        left: 50%;
+        margin-left: -60px;
+      }	
+  
+      .nav-toggle {
+        right: 30px;
+        top: 35px;
+        width: 40px;
+        }
+  
+  
+      .nav ul li{
+          font-size: 3vw;
+          width: 100%;
+          margin-left: 0%;
+          text-align: left;
+        }
+        
+        .nav.expanded {
+          left: 60%;
+          }
+
+    .icon-coffee {
+      width: 4%;
+  }
+
+    .intro-section h1 {
+      font-size: 3.8vw;
+    }
+
+    .menu-border {
+      width: 95%;
+    }
+
+    .wrapper-menu {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    .menu-1 h1 {
+      font-size: 3vw;
+    }
+
+    .hot-drinks {
+      margin-left: -5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      
+    }
+
+    .hot-drinks img {
+      width: 170%;
+      margin-top: 15%;
+      margin-left: -30%;
+    }
+
+    .hot-drinks h2 {
+      color: #0018b1;
+      font-size: 2.8vw;
+      margin-left: -15%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+
+    .horisontal-line {
+      margin-left: -15%;
+    }
+
+    .hot-drinks p {
+      margin-left: -15%;
+      width: 100%;
+      font-size: 1.5vw;
+      margin-bottom: 10%;
+    }
+
+    .short-horisontal-line {
+      margin-left: -15%;
+    }
+
+    .hot-drinks h3 {
+      margin-left: -3%;
+      color: #0018b1;
+    }
+
+    .hot-drinks h4 {
+      margin-left: -3%;
+    }
+    
+    .hot-drinks-price {
+      margin-left: -2%;
+      margin-top: -2%;
+    }
+
+    .hot-drinks-price .short-horisontal-line {
+      width: 60%;
+    }
+
+    .wrapper-menu-2 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    .menu-2 h1 {
+      font-size: 3vw;
+    }
+
+    .cold-drinks {
+      margin-left: -5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      
+    }
+
+    .cold-drinks img {
+      width: 170%;
+      margin-top: 15%;
+      margin-left: -30%;
+    }
+
+    .cold-drinks h2 {
+      color: #0018b1;
+      font-size: 2.8vw;
+      margin-left: -15%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+
+    .horisontal-line {
+      margin-left: -15%;
+    }
+
+    .cold-drinks p {
+      margin-left: -15%;
+      width: 100%;
+      font-size: 1.5vw;
+      margin-bottom: 10%;
+    }
+
+    .short-horisontal-line {
+      margin-left: -15%;
+    }
+
+    .cold-drinks h3 {
+      margin-left: -3%;
+      color: #0018b1;
+    }
+
+    .cold-drinks h4 {
+      margin-left: -3%;
+    }
+    
+    .cold-drinks-price {
+      margin-left: -7%;
+      margin-top: -2%;
+    }
+
+
+    .menu-3 h1 {
+      font-size: 3vw;
+    }
+
+    .wrapper-menu-3 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+    .food-text {
+      margin-bottom: 15%;
+      margin-left: 8%;
+    }
+
+    .food-text h2 {
+      font-size: 2.8vw;
+    }
+
+    .food-text p {
+      color: #0018b1;
+      width: 90%;
+      font-size: 1.5vw;
+    }
+
+    .food-text span {
+      font-size: 2vw;
+    }
+
+    .food-text h3 {
+      font-size: 2.8vw;
+    }
+
+    .icons {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    #icon-croissant {
+      margin-left: 35%;
+      width: 10%;
+      margin-bottom: 5%;
+    }
+
+    #icon-sandwich {
+      margin-left: 5%;
+      width: 14%;
+      margin-bottom: 5%;
+    }
+
+
+
+     /* footer */
+	
+			.logo-footer {
+				width: 15%;
+				margin-left: 42.5%;
+			}
+	
+			footer p {
+				font-size: 1.8vw;
+			}
+	
+			.footer-text {
+				display: flex;
+				flex-direction: row;
+				align-items: start;
+				gap: 5%;
+				margin-left: 20%;
+			
+				
+			}
+	
+			.footer-text h2 {
+				font-size: 3.8vw;
+			}
+	
+			.city-img {
+				width: 80%;
+				margin-top: 1%;
+				margin-left: 12%;
+				margin-bottom: 1%;
+			}
+
+
+
+    
+	
+		}
+	
+		
+	
+	   /* tredje breakpoint */
+		@media screen and (min-width: 1024px) {
+	
+		  .mobile-container {
+        max-width: 1200px;
+        margin: auto;
+        border-radius: 10px;
+        }
+  
+        .nav-toggle {
+        right: 30px;
+        top: 38px;
+        width: 40px;
+        }
+  
+        .nav ul li{
+          font-size: 2.5vw;
+        }	
+    
+        .nav.expanded {
+          left: 70%;
+          }
+
+          .intro-section h1 {
+            font-size: 3vw;
+          }
+	
+		  
+		  
+	  
+	
+		}      
+	
+    /* fjerde breakpoint */
+		@media screen and (min-width: 1200px) {
+	
+		
+		  .mobile-container {
+			max-width: none;
+			width: 100%;
+			margin: auto;
+			border-radius: 10px;
+			
+		  }
+	
+     
+		
+		
+		}
+		

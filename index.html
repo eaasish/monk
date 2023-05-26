@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Monk kaffebar">
+    <meta property="og:description" content="Monk kaffebar, Aarhus Ø - tilbyder kvalitetskaffe, drikkevarer, bagværk, kaffeudstyr og bønner til at tage med hjem. Minimalistisk og moderne kaffebar med indendørs- og udendørs siddepladser, med havudsigt">
+    <meta name="keywords" content="Kaffebar, kavlitetskaffe, dygtige baristaer, bønner, nomad, prolog, bagværk, berta bageri, keramik, hansesgaard">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="noindex nofollow">
+
+     <!-- 
+        Kilder benyttet til SEO og optimering af website:
+
+        Prakharevich, A. (2022) 8 HTML Tags Essential for SEO. 
+        Available at: https://www.link- assistant.com/news/html-tags-for-seo.html (Accessed: 24 maj 2022).
+    
+        SEO Friendly Website Design Tips for Website Designer | Wordpress SEO Tips for Beginners in 2020 (2019). 
+        Available at: https://www.youtube.com/watch?v=iC7O3o8Brsk (Accessed: 23 maj 2023).
+    -->
+
+    <style>
+        @import url("https://use.typekit.net/wks6hkh.css");
+      </style>
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>monk</title>
+</head>
+
+  <!-- 
+        Kilde benyttet til semantiske tags
+
+        Sebhastian, N. (2019) Using HTML container tags explained, Nathan Sebhastian. 
+        Available at: https://sebhastian.com/html-container-tags (Accessed: 15 maj 2023.
+        
+        When to Use Semantic HTML Elements Instead of Divs #tryminim (2021). 
+        Available at: https://www.youtube.com/watch?v=ZThq93Yuwd0 (Accessed: 15 maj 2023.
+    -->
+
+<body>
+    <!-- mobil container start-->
+    <div class="mobile-container">
+
+    <!-- navigationsmenu start-->
+        <header class="head">
+            <div class="nav-toggle">
+                <div class="nav-toggle-bar"></div>
+            </div>
+            
+            <nav id="nav" class="nav">
+                <ul>
+                    <li><a href="menukort.html">menukort</a></li>
+                    <li><a href="partnerskaber.html">partnerskaber</a></li>
+                    <li><a href="voreskaffe.html">vores kaffe</a></li>
+                    <li><a href="ommonk.html">om monk</a></li>
+                </ul>
+            </nav>
+
+            <!-- logo -->
+            <a href="index.html"><img class="logo" src="img/logo-header.png" alt="logo til headeren"></a>
+           
+
+        </header>
+        <!-- navigationsmenu slut-->
+
+    <!-- video med autostart -->
+    <video autoplay loop muted class="intro-video" src="video/monkintro.mp4"></video>
+
+    <section class="backround">
+        <img class="backround-image" src="img/boelge.png" alt="hvid bølge til main">
+    </section>
+
+     <!-- velkommen section start-->
+    <div class="welcome-section"> 
+        <img class="icon-coffee" src="img/icon-coffee.png" alt="ikon til intro">
+        <h1>velkommen</h1>
+        <p>Træd ind i vores kaffeunivers og lad os skabe øjeblikke sammen. Vi er glade for at have dig her, og vi lover en smagsoplevelse ud over det sædvanlige!</p>
+
+        <div class="collage">
+            <div class="collage-img">
+                <img src="img/image-1.png" alt="croissant med en kop kaffe">
+                <img src="img/image-2.jpg" alt="indretning i butikken">
+            </div>
+        </div>
+    </div>
+    <!-- velkommen section slut-->
+
+     <!-- historie section -->
+    <div class="history-section">
+        <img class="monk-coffee" src="img/image-3.png" alt="kaffe med latteart">
+
+        <article class="text-section">
+            <h1>monk coffee</h1>
+            <p>Kaffen er grundlæggende det vigtigste og det vi sælger, men når man tager kaffen ud vil vi gerne have lige så meget fokus på det omkringliggende. Vi vil gerne give noget som favner en masse forskellige målgrupper og en masse forskellige mennesker</p>
+            <div class="btn-section">
+                <a class="button-1" href="ommonk.html">læs mere</a>
+            </div>
+        </article>
+
+        <!-- citat start-->
+        <article class="web-section">
+                <div class="quote hidden">
+                    <span class="questionmark-1">”</span>
+                    <div class="quote-text">
+                    <p> Vi vil også gerne give vores kunder alt 
+                    <br>det der ligger uden om kaffen</p>
+                    </div>
+                    <span class="questionmark-2">„</span>
+                </div>
+        <!-- citat slut-->
+
+        <!-- Ilustration tegning af kaffebrygning-->
+            <div class="illustration">
+                <img class="illustration-coffee" src="img/illustration-coffee.png" alt="illustration af kaffebrygning">
+            </div>
+        </article>
+    </div>
+    <!-- historie section slut -->
+
+   
+    <figure class="desk-image">
+        <img class="image-desk" src="img/image-4.png" alt="disken i butikken">
+    </figure>
+
+    <!-- monk bilen section start -->
+    <div class="coffee-car"> 
+        <img class="monk-car" src="img/monk-car.png" alt="monk kaffevogn">
+        <div class="coffee-car-web">
+            <div>
+            <article class="coffee-car-text">
+            <h1>monk kaffevogn</h1>
+                <p> <br> Opdag monks nye og mobile kaffeoplevelse i Aarhus. <br><br>
+                    monk præsenterer vores helt nye kaffevogn, der kører rundt i de smukke gader i Aarhus.
+                    monk vognen er et mobilt kaffebryggeri. Vi værner om kvalitet og for det gyldne bryg. Vi bruger kun de bedste økologiske kaffebønner. Vi laver alt lige fra klassisk espresso og cremet cappuccino til en kold forfriskende iskaffe.
+                    <br><br>
+                    Du kan finde kaffevognen i Aarhus, eller til din næste begivenhed. Vi kan bringe den mobile kaffeoplevelse direkte til din begivenhed. 
+                    <br><br>
+                    Vores erfarne baristaer står klar til at fortrylle dine gæster med en skræddersyet menu.
+                    </p>
+                </article>
+            </div>
+  
+            <div>
+                <img class="img-coffeemachine" src="img/image-5.png" alt="kaffemaskine"> 
+            </div>
+        </div>   
+        <img class="gif" src="img/monkbilgif.gif" alt="gif af kaffevogn">
+
+    </div>
+    <!-- monk bilen section slut -->
+
+    <!-- monks udvalg section start -->
+    <article class="lorem">
+        <h1>monks udvalg</h1>
+        <p>Forkæl dig selv og dine smagsløg hos monk. <br> Vores lækre menu byder på håndbrygget kaffe, forfriskende drikke og fristende bagværk. Besøg os i dag og bliv en del af monk community.</p>
+    </article>
+
+    <div class="illustrations">
+        <img class="illustrations-image" src="img/illustrations.png" alt="bølge illustration">
+        <img class="illustrations-image1" src="img/illustrations-web.png" alt="bølge illustration">
+    </div>
+
+    <div class="image-collage">
+        <img class="collage-image" id="image-collage-1" src="img/image-6.png" alt="croissant">
+        <img class="collage-image" id="image-collage-2" src="img/image-9.png" alt="hveder">
+        <img class="collage-image" id="image-collage-3" src="img/image-8.png" alt="iskaffer og is matcha">
+        <img class="collage-image" id="image-collage-4" src="img/image-7.png" alt="brød med ost og smør + kaffe">
+    </div>
+
+    <article class="menukort-text hidden"> 
+
+        <h2>Se vores udvalg af bagværk og drikkevarer her.
+            Vi glæder os til at se dig!</h2>
+          
+        <a class="button-2" href="menukort.html">menukort</a>
+
+    </article>
+    <!-- monks udvalg section slut -->
+
+    <!-- Ilustration tegning af monk ude foran-->
+    <figure class="monk-front">
+        <img class="front-monk" src="img/image-10.png" alt="monk udenfor">
+    </figure>
+
+    <!-- footer start-->
+    <footer>
+        <img id="line" src="img/footer.png" alt="bølge til footer">
+
+        <img class="logo-footer" src="img/logo.png" alt="monk logo">
+        <p>åbent alle dage 8 - 18</p>
+
+        <div class="footer-text">
+            <div class="socials">
+                <h2>sociale medier</h2>
+                <a href="https://www.facebook.com/monkcoffee.dk" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/monk_aarhus/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            </div>
+            <div>
+                <h2>kontakt</h2>
+                <p>hello@monkcoffee.dk</p>
+            </div>
+            <div>
+                <h2>find os</h2>
+                <p>Bernhardt Jensens Blvd 75, <br> 8000 Aarhus</p>
+            </div>
+        </div>
+
+        <img class="city-img" src="img/aarhusoe.png" alt="illustartion af Aarhus ø">
+    </footer>
+    <!-- footer slut-->
+    
+
+    </div>
+    <!-- mobil container slut-->
+    
+</body>
+</html>
